@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bossing ko!!!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: blueviolet;
+        }
+
+        header {
+            height: 80px;
+            background-color: blueviolet;
+            color: #333;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-left: 40;
+            font: 2em candara;
+            
+        }
+
+         header h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-left: 8;
+            font: 2em candara;
+            
+        } 
+        header nav ul {
+            margin-left: 1280;
+            text-decoration: none;
+        }
+
+        header nav ul li {
+            text-decoration: none;
+            display: inline;
+            font: 1.2em candara;
+        }
+
+
+        footer {
+            height: 100px;
+            background-color: blueviolet;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1%;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        main img {
+            width: 100%;
+            height: 0%;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+        }
+
+
+        .one {
+            background-color: rgb(36, 31, 65);
+            color: antiquewhite;
+        }
+
+        .two {
+            background-color: rgb(36, 31, 65);
+            font-size: 40px;
+            color: antiquewhite;
+        }
+
+        .tri{
+            background-color: rgb(36, 31, 65);
+            padding-bottom: 30px;
+            color: antiquewhite;
+        }
+
+        .for {
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .product-grid > :nth-child(4) {
+            grid-column: 1 / 2; 
+        }
+
+        .product-grid > :nth-child(6) {
+            grid-column: 3 / 4; 
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 15px 0;
+        }   
+
+        .product-card p {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .learn-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: rgb(36, 31, 65);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+        .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+        @media (max-width: 480px) {
+        .product-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+        
+    </style>
+    </head>
+    
+
+    <header>
+            <a href="home1.html"><p>Logout |</p></a>
+    </header>
+<body>
+    
+    <main>
+      
+        <div class="two"><h1>Jem's</h1></div>
+        
+        <div class="for"><h1>Favorite's</h1></div>
+    </main>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="cat.png" alt="Ethereon 1">
+            <h3>Cat</h3>
+            <p>a small domesticated carnivorous mammal with soft fur, a short snout, and retractable claws. It is widely kept as a pet or for catching mice, and many breeds have been developed.</p>
+            <a href="cat.html" class="learn-more">LEARN MORE &gt;</a>
+        </div>
+        <div class="product-card">
+            <img src="icecream.jpg" alt="Ethereon 3">
+            <h3>Ice Cream</h3>
+            <p>a soft frozen food made with sweetened and flavored milk fat.</p>
+            <a href="icecream.html" class="learn-more">LEARN MORE &gt;</a>
+        </div>
+        <div class="product-card">
+            <img src="karekare.png" alt="Ethereon 5">
+            <h3>Kare-Kare</h3>
+            <p>Kare-kare is a Philippine stew, kare derives from "curry" that features a thick savory peanut sauce. It is generally made from a base of stewed oxtail, ...</p>
+            <a href="karekare.html" class="learn-more">LEARN MORE &gt;</a>
+        </div>
+        <div class="product-card">
+            <img src="baguio.jpeg" alt="Ethereon 9">
+            <h3>Baguio</h3>
+            <p>a highly urbanized city in the Cordillera Administrative Region, Philippines. It is known as the "Summer Capital of the Philippines"</p>
+            <a href="baguio.html" class="learn-more">LEARN MORE &gt;</a>
+        </div>
+        <div class="product-card">
+            <img src="japan.jpg" alt="Ethereon 15">
+            <h3>Japan</h3>
+            <p>Japan is an island country in East Asia. Located in the Pacific Ocean off the northeast coast of the Asian mainland</p>
+            <a href="japan.html" class="learn-more">LEARN MORE &gt;</a>
+        </div>
+        <div class="product-card">
+            <img src="ty.jpg" alt="Ethereon 15">
+            <h3>Thank You</h3>
+            <p> Thanks for reading my work i really appreciate it!!!</p>
+            <a href="thankyou.html" class="learn-more">SEE MESSAGE! &gt;</a>
+        </div>
+    </div>
+
+    <script>
+        const noButton = document.getElementById('no');
+
+        noButton.addEventListener('mouseover', () => {
+      const randomX = Math.floor(Math.random() * (window.innerWidth - noButton.offsetWidth));
+      const randomY = Math.floor(Math.random() * (window.innerHeight - noButton.offsetHeight));
+      noButton.style.left = `${randomX}px`;
+      noButton.style.top = `${randomY}px`;
+    });
+    </script>
+</body>
+</html>
